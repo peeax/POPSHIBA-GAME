@@ -20,4 +20,16 @@ window.onload = function () {
         score++;
         count.innerHTML = score;
     }
+
+    // touch
+    img.addEventListener("touchstart", function () {
+        increaseScore();
+        img.src = 'popdog2-removebg.png';
+        audio.play();
+    });
+
+    img.addEventListener("touchmove", function () {
+        img.src = 'popdog1-removebg.png';
+        audio.play();
+    });
 }
